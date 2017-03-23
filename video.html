@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <title>Web Portfolio: Jarett's Video Page</title>
+
+
+      <script>
+      // create a few global variables to be used later
+      var video, speed, volume;
+
+      function init() { 
+  // initialize the player 
+  // first, get the media element and assign it to the video variable
+  video = document.getElementById('myvideo');      
+
+  // get the current playbackRate from the HTML5 media API 
+  // range is 0 to very fast, with 1 being normal playback 
+  speed = video.playbackRate;   
+
+    // volume range is 0 to 1 
+  // set it in the middle so we have room to move it with our buttons
+  volume = 0.5;
+  video.volume = volume; 
+}
+
+function play() {       
+  video.play(); 
+}
+
+function pause() {       
+  video.pause();
+}
+
+function changeSpeed(direction) { 
+  // direction is either 'up' (faster) or 'down' (slower) 
+  if (direction == 'up') { 
+    if (speed < 10) { 
+      // increase playbackRate 
+      speed = speed + 0.1; 
+    }
+  }  
+  else if (direction == 'down') { 
+    if (speed > 0) {
+      // decrease playbackRate
+      speed = speed - 0.1; 
+    }
+  }
+  // so far all we've done is change the value of our speed variable 
+  // not let's assign it to the player 
+  video.playbackRate = speed;           
+}
+      
+function changeVolume(direction) { 
+  if (direction == 'up') { 
+    // if not fully cranked yet, increase volume 
+    if (volume < 0.9) {
+      volume = volume + 0.1; 
+    }
+  }  
+  else if (direction == 'down') { 
+    // if not muted, decrease volume
+    if (volume > 0.1) {  
+      volume = volume - 0.1; 
+    }
+  }       
+  // so far all we've done is change the value of our volume variable 
+  // not let's assign it to the player 
+  video.volume = volume;            
+} 
+      
+// wait until the web page has finished loading, then run the init function
+window.onload = init;
+
+
+
+      </script>
+
+
+      </head>
+ <h1>Web Portfolio: Videos</h1>
+
+        <head>
+
+
+             <link rel="shortcut icon" href="_assets/images/favicon.png">
+          <meta charset="utf-8">
+          <title>Web Portfolio: Jarett Jacob</title>
+          <link type="text/css" rel="stylesheet" href="_assets/css/mystyle.css" media="screen">
+
+
+ 
+     </head>
+     <body>
+
+
+
+
+
+         <div id="skipnav">
+
+          <a href="#main">Skip to main content</a>
+
+         </div>
+         
+         <div>
+             <ul>
+                 <li>Web Design and Development I</li>
+                 <li>Ms. Cindi Chang</li>
+                 <li><a href ="http://www.swcta.net">Southwest Career and Technical Academy</a></li>
+                 <li>2016-2017</li>
+                 
+             </ul>
+         </div>
+
+         
+    
+
+         <div class="Info">
+             <ul>
+              
+                 <li>Jarett Jacob</li>
+                 <li><a href="mailto:Jarett.44124@nv.ccsd.net">Jarett.44124@nv.ccsd.net</a></li>
+                 
+             </ul>
+         </div>
+
+         <nav id="navigation">
+             <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="accessibility.html">Accessibility</a></li>
+                 <li><a href="usability.html">Usability</a></li>
+                 <li><a href="graphics.html">Graphics</a></li>
+                 <li><a href="javascript.html">JavaScript</a></li>
+                 <li><a href="tools.html">Tools</a></li>
+                 <li><a href="videos.html">Videos</a></li>
+             </ul>
+         </nav>
+ 
+    <body>
+
+
+    
+      
+      
+      <video id="myvideo" poster="_assets/images/code.jpg" preload="none">
+        <source src="_assets/video/code.mp4" type="video/mp4"></source>
+        <source src="_assets/video/code.webm" ty[e="video/webm"></source>
+      </video>
+
+      <div id="myplayer">
+  <button onclick="play()">Play</button>
+ 
+  <button onclick="pause()">Pause</button>
+
+  <button onclick="changeSpeed('up')">Faster</button>
+
+  <button onclick="changeSpeed('down')">Slower</button>
+
+  <button onclick="changeVolume('up')">Louder</button>
+
+  <button onclick="changeVolume('down')">Softer</button>
+</div>    
+
+
+      <h1>ACTE PSA  video</h1>
+
+       <p>This video shows the program areas inside a CTA school. </p>
+      <video controls poster="_assets/images/still.png" preload"none">
+        <source src="_assets/video/CTE Video.mp4" type="video/mp4"></source>
+      </video>
+
+    </body>
+ </html>
