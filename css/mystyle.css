@@ -1,0 +1,209 @@
+/* Jaret Jacob, Period 4, Ms. Chang*/
+/*
+#D2FFFA
+#92B3AF
+#D1FFDB
+#92B399
+#000000
+*/
+
+
+
+
+
+
+body {
+	font-size: 1em;
+	font-weight:normal;
+	font-family: Arial, Sans-serif;
+	color: black; /*black*/
+	text-align: center;
+	background-color: #FFCCBB;
+	margin: 0 auto;
+	border: 10px solid black;
+	padding: 15px;
+	width: 80%;
+	min-width: 720px;
+	background-image: url(https://www.artleo.com/pic/201401/2560x1440/artleo.com-64201.jpg);
+
+	
+}
+h1 {
+	font-size: 6em;
+	font-weight: bold;
+	font-family: Impact;
+	color: #92B399; 
+	text-align: center;
+	border: 10px solid black;
+	padding: 25px;
+	background-color: white;
+	-webkit-box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+	box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+	
+
+
+}
+h2 {
+	font-size: 4em;
+	font-weight: bold;
+	font-family: Courier;
+	color: #92B3AF; 
+	text-align: center;
+	border: 10px solid grey;
+	-webkit-box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+-moz-box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+
+
+
+}
+div {
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #4312AE; 
+	text-align: center;
+	width: 300px;
+    border: 25px solid grey;
+    padding: 25px;
+    margin: 25px;
+    background-color: #EBF5FF;
+ 	box-shadow: 4px 4px 4px #999999;
+	
+}
+p {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: impact;
+	color: black; 
+	text-align: center;
+	border: 10px solid black;
+	-webkit-box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+-moz-box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56);
+box-shadow: -4px 10px 41px 2px rgba(0,0,0,0.56); 
+
+}
+li {
+	font-size: 1.15em;
+	font-weight: normal;
+	font-family: impact; 
+	text-align: left;
+}
+th {
+	background-color: white;
+	color: black;
+	padding: 0.75em;
+	margin: 1px;
+
+}
+
+
+
+
+table {
+	margin: 0 auto;
+	background-color: black;
+
+
+
+}
+p{
+	text-align:center;
+	padding:20px;
+	width:340px;
+	margin: 0 auto;
+
+
+}
+
+a {
+	color: black;
+	background-color: white;
+	
+}
+a:hover {
+	color: black;
+	background-color: white;
+}
+a:hover, a:focus {
+	color:white;
+	background-color: black;
+}
+
+div#skipnav {
+	top: 5px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	right: 12.5%;
+	left: 5px;
+
+}
+div.info {
+	width: 30%;
+	font-size: 1em;
+	float: left;
+}
+	/* navigation menu menu styles */
+nav {
+	clear:left;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 0.5em;
+
+}
+
+nav li a {
+	padding: 0.25em 1em;
+	text-decoration: none; /* no underline*/
+	background-color: #EBF5FF;  /* change this */
+	color: #4312AB;
+	border: 2px solid black;
+	border-top-left-radius: 1em 1em;
+	border-top-right-radius: 1em 1em;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
+.main {
+	clear: left;
+	padding: 1em;
+}
+
+  button { 
+    font-size: 1.1em;
+    background-color: #EBF5FF;
+    color: #4312AE;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px #999999;
+    border-radius: 10px;
+  }
+  button:hover, button:focus, button:active { 
+    /* swap colors */
+    color: #EBF5FF;
+    background-color: #4312AE;
+    cursor: pointer; /* displays a hand */
+  }
+
+    div#clock { 
+    	background-color: black;
+    	color: #1CD06E;
+    	display: inline;
+    	font-size: 60px;
+    	padding: 10px;
+    	border: 3px solid red;
+      
+ }
+
+
+
